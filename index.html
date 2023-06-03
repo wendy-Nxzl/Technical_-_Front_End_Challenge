@@ -1,55 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Front End Developer - Coding Challenge</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="image">
-            <img src="./assets/img/man.jpg" alt="User Photo" class="photo_profile">            
+      <div class="user_container">
+        <img
+          src="./assets/img/man.jpg"
+          alt="User Photo"
+          class="photo_profile"
+        />
+        <p>
+          <span style="color: #00ADE8">Garry Newman</span> posted on your
+          timeline <br /><span style="color: gray">32 minutes ago</span><br />
+        </p>
+        <img
+          src="./assets/icon/more.png"
+          alt="More"
+          class="interaction_button"
+          id="more"
+        />
+      </div>
+      <div class="content">
+        <div class="content_aware">
+          <div class="text_content">
+            <p>
+              Remember the place we were talking about the other night? Found
+              it!
+            </p>
+          </div>
+          <div>
+            <img src="./assets/img/lake.jpg" alt="Lake" class="image_content" />
+          </div>
         </div>
-        <div class="text_activity">
-            <p><span class="username">Newman posted</span> on your timeline</p>
-            <p class="time">32 minutes ago</p>
-        </div>
-    </div>    
-    <div>
-        <p>Remember the place we were talking about the other night? Found it!</p>
-        <img src="./assets/img/lake.jpg" alt="Lake" class="image_content">
         <div class="interaction">
-            <a><img src="./assets/icon/heart.png" alt="Like" class="interaction_button">Like</a>
-            <a><img src="./assets/icon/share.png" alt="Share" class="interaction_button">Share</a>
-        </div>        
+          <div class="interact_container">
+            <a
+              ><img
+                src="./assets/icon/heart.png"
+                alt="Like"
+                class="interaction_button"
+              />
+              <p>Like (5)</p></a
+            >
+            <a
+              ><img
+                src="./assets/icon/share.png"
+                alt="Share"
+                class="interaction_button"
+              />
+              <p>Share (21)</p></a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- User Comment -->
+      <div class="message_container">
+        <div>
+          <div class="message_popup">
+            <p>1 comments</p>
+            <img
+              src="./assets/icon/down-arrow.png"
+              alt="Message Pop-up"
+              class="interaction_button"
+            />
+          </div>
+          <div class="message_section">
+            <div>
+              <img
+                src="./assets/img/women.jpg"
+                alt="User Photo"
+                class="photo_profile"
+              />
+            </div>
+            <div>
+              <p class="nickname">
+                <b>Alice Freeman</b><span> June 10, 2018</span>
+              </p>
+              <div class="user_message">
+                <p>
+                  That's wonderful place. Lorem ipsum, dolor sit amet
+                  consectetur adipisicing elit. Doloremque sint magnam
+                  dignissimos maiores ullam, officiis natus aut, vero neque
+                  atque nisi aperiam praesentium molestiae facilis!
+                </p>
+              </div>
+              <div class="replyReport">
+                <p>Reply</p>
+                <a
+                  ><img
+                    src="./assets/icon/report.png"
+                    alt="Report"
+                    class="interaction_button"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comment_container">
+          <div class="photo_profile">
+            <img
+              src="./assets/img/no_photo.png"
+              alt="User Photo"
+              class="photo_profile"
+            />
+          </div>
+          <div>
+            <div class="user_comment">
+              <textarea
+                cols="88"
+                rows="4"
+                placeholder="Add a comment..."
+              ></textarea>
+            </div>
+            <div class="button_submit">
+              <button type="submit">Post Comment</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="container_reply">
-        <div class="expand_comment">
-
-        </div>
-        <div class="user_reply">
-            <div class="photo_profile">
-                <img src="./assets/img/women.jpg" alt="User Photo" class="photo_profile">
-            </div>
-            <div class="user_reply_text">
-                <p><b>Alice Freeman</b> <span class="time">June 10, 2018</span></p>
-                <p>That's wonderful place. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque sint magnam dignissimos maiores ullam, officiis natus aut, vero neque atque nisi aperiam praesentium molestiae facilis! Asperiores impedit delectus molestias iusto?</p>
-                <div class="reply_interaction">
-                    <p>Reply</p>
-                    <a><img src="./assets/icon/report.png" alt="Report" class="interaction_button"></a>
-                </div>
-            </div>
-        </div>
-        <div class="user_comment">
-            <div class="photo_profile">
-                <img src="./assets/img/no_photo.jpg" alt="User Photo" class="photo_profile">
-            </div>
-
-        </div>
-    </div>
-</body>
+  </body>
 </html>

@@ -1,35 +1,152 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  width: 800px;
+  height: 845px;
+  margin: auto;
+  box-shadow: 1px 1px 3px 6px lightgray;
 }
 
-.username{
-    color: #2493d8;
+/* Universal - Start */
+.container{
+    margin: 15px;
 }
 
-.time{
-    color: gray;
+.photo_profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
-.image_content{
+.interaction_button {
+  width: 13px;
+  height: 13px;
+}
+
+/* Universal - End */
+
+/* Container - Start */
+
+.user_container {
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.user_container p {
+  margin-bottom: 15px;
+  padding-left: 10px;
+}
+
+.user_container img,
+p {
+  display: inline;
+}
+
+#more {
+  margin-top: 10px;
+  align-self: center;
+  margin-left: auto;
+}
+
+/* Container - End */
+
+/* Content - Start */
+.content {
+  padding-bottom: 40px;
+}
+
+.text_content {
+  padding-bottom: 25px;
+}
+
+.interaction {
+  padding-top: 15px;
+}
+
+.interact_container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.interact_container img {
+  padding-right: 5px;
+}
+
+.interact_container p {
+  padding-left: 5px;
+  padding-right: 20px;
+  opacity: 70%;
+}
+
+/* Content - End */
+
+/* Message - Start */
+.message_container {
+    margin: -15px;
+  border-radius: 0 0 5px 5px;
+  background-color: #F5F5F5;
+  padding: 10px 0px 20px 20px;
+}
+
+.message_popup {
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.message_section {
+  display: flex;
+}
+
+.nickname {
+  margin-left: 10px;
+}
+
+.nickname span {
+  opacity: 70%;
+}
+
+.user_message {
+  margin-left: 10px;
+  padding-top: 5px;
+}
+
+.replyReport {
+  margin-left: 10px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.replyReport p {
+  color: #00ADE8;
+  padding-right: 10px;
+}
+
+/* Message - End */
+
+/* Comment - Start */
+.comment_container{
     display: flex;
-    align-items: start;
 }
 
-.photo_profile{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
+.user_comment{
+    padding-left: 10px;
+    box-sizing: border-box;
 }
 
-.content{
-    width: 60%;
-    height: auto;
+.button_submit{
+    padding: 10px 0px 0px 10px;
 }
 
-.interaction_button{
-    width: auto;
-    height: 13px;
-    color: #111212;
-    padding: 5px;
+button {
+  padding: 10px 13px 10px 13px;
+  border-radius: 5px;
+  background-color: #039BE5;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border: none;
 }
+/* Message - End */
